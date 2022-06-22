@@ -15,3 +15,12 @@ type Disc struct {
 	Type string
 }
 
+func (m Member) get_nombre_completo() string {
+
+	res := ""
+	res += m.LastName
+	res += ", "
+	res += m.Name
+	return res
+
+}
